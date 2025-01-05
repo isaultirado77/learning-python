@@ -20,3 +20,6 @@ class Circle(Shape):
     def perimeter(self):
         return 2 * math.pi * self.radius
 
+
+class Rectangle(Shape): 
+	pass
