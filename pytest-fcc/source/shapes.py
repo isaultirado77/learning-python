@@ -32,3 +32,8 @@ class Rectangle(Shape):
     def perimeter(self) -> float:
         return 2.0 * self.l + 2.0 * self.w
 
+    def __eq__(self, other) -> bool:
+        if not isinstance(other, Rectangle): 
+            return False
+        return self.w == other.w and self.l == other.l
+
