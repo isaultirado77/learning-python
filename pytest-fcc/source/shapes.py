@@ -21,5 +21,14 @@ class Circle(Shape):
         return 2 * math.pi * self.radius
 
 
-class Rectangle(Shape): 
-	pass
+class Rectangle(Shape):
+    def __init__(self, length: float, width: float) -> None:
+        self.l = length
+        self.w = width
+
+    def area(self) -> float:
+        return self.l * self.w
+
+    def perimeter(self) -> float:
+        return 2.0 * self.l + 2.0 * self.w
+
