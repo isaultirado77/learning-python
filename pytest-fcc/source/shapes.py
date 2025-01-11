@@ -37,3 +37,6 @@ class Rectangle(Shape):
             return False
         return self.w == other.w and self.l == other.l
 
+class Square(Rectangle): 
+    def __init__(self, side: float) -> None:
+        super().__init__(side, side)
